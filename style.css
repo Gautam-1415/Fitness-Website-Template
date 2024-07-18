@@ -1,0 +1,279 @@
+body, html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: azure;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: azure;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff386a;
+}
+
+/* section 1 */
+.section1 {
+  width: 100%;
+  height: 620px;
+  background-image: url("images/6.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.heading1 {
+  font-size: 95px;
+}
+
+.sub_heading {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  color: azure;
+}
+
+.main_heading {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: azure;
+  animation-delay: 1s;
+}
+
+.anim {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: moveside 1s linear forwards;
+}
+
+@keyframes moveside {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* section 3 */
+.section3 {
+  position: relative;
+  background-image: url("images/5.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.middle {
+  padding: 100px 300px;
+  text-align: center;
+}
+
+.buttons {
+  padding: 60px 300px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.heading2 {
+  font-size: 70px;
+  letter-spacing: 2px;
+  z-index: 1;
+  position: relative;
+}
+
+.main_heading1 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.sec_image {
+  position: absolute;
+  top: 85px;
+  left: 300px;
+  z-index: 0;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.section4 {
+  background: radial-gradient(circle at 48.1% 48.8%, rgb(31, 31, 31) 0%, rgb(0, 0, 0) 99.4%);
+  padding: 60px;
+}
+
+.parts1 {
+  padding: 15px;
+}
+
+.part2 {
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,);
+  transition: transform 330ms ease-in-out;
+  font-size: 14px;
+}
+
+.container {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.sec4 {
+  padding: 70px 100px;
+}
+
+.part2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  background-color: rgba(30, 29, 29, 0.5);
+}
+
+.section5 {
+  height: 620px;
+  position: relative;
+  background-image: url("images/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.section7 {
+  height: 650px;
+  position: relative;
+  background-image: url("images/4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.graph {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  z-index: 0;
+  transform: translate(-300px);
+}
+
+.main_heading2 {
+  position: absolute;
+  top: 70px;
+  left: 130px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.heading3 {
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: #ff386a;
+}
+
+.section6 {
+  background: black;
+  padding: 60px;
+  text-align: center;
+}
+
+.part3 {
+  padding: 40px;
+}
+
+.sec5 {
+  padding: 70px 40px;
+  padding-top: 0px;
+}
+
+.sec7 {
+  font-size: 13px;
+  position: absolute;
+  top: 450px;
+  left: 130px;
+  width: auto;
+}
+
+.btn {
+  background-color: #ff386a;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 0;
+  text-align: center;
+}
+
+.btn:hover {
+  border: 1px solid white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1px;
+  padding: 10px;
+}
+
+.item1 {
+  grid-row: 1 / 4;
+  color: #ff386a;
+  font-family: "Anton", sans-serif;
+  padding: 20px 20px;
+}
+
+.item1 > h1 {
+  font-size: 80px;
+  padding: 40px;
+  width: 200px;
+}
+
+.item2 {
+  grid-row: 1 / 3;
+  padding: 70px 20px 0 20px;
+}
+
+.item3, .item5 {
+  padding: 20px 20px;
+}
+
+.item4 {
+  padding-left: 60px;
+  padding-right: 120px;
+}
+
+#dialog {
+  background-color: transparent;
+}
+
+.ui-widget-content {
+  background-color: transparent;
+}
